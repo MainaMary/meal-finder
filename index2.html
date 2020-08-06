@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <form id='myForm'>
+        <input type="text" id="input-txt">
+        <button type="submit">Submit</button>
+        </form>
+        <script>
+            const form =document.getElementById('myForm');
+            form.addEventListener('submit', (e)=>{
+                e.preventDefault();
+                const search = document.getElementById('input-txt').value;
+                console.log(search);
+            });
+        </script>
+    </body>
+</html>
