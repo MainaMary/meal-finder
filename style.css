@@ -33,8 +33,9 @@ input{
 .search-btn{
     border: none;
     background-color: transparent;
-    /* margin-left: -50px; */
+    margin-left: -50px; 
     cursor: pointer;
+    outline: none;
 }
 #random{
     margin-left: 20px;
@@ -55,6 +56,11 @@ input{
 
 
 }
+.show{
+    margin-top: 20px;
+    color: #000;
+    font-weight: 700;
+}
 .meals{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -64,8 +70,8 @@ input{
 .meal{
     cursor: pointer;
     position: relative;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
 }
 .meal img{
     width: 100%;
