@@ -21,30 +21,42 @@ single_mealElem.innerHTML = ' ';
 
 
 // check for empty
-if(input.trim()){
-     //console.log(input);
+if(search.trim()){
+    
+     //get Request
      fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=${search}')
+    
+     //format the response to JSON
      .then(res => res.json())
+
+     //we get the data in return
      .then(data =>{
          console.log(data);
-         resultHeading.innerHTML= `<h2>Search results for ${ search}</h2>`
-    if(data.meals === null){
-        resultHeading.innerHTML= 'There are no search results for ${input}.Try again!'
+         resultHeading.innerHTML= `<h2>Search results for '${search}':</h2>`
+  //check meals with the serach value
+
+if(data.meals === null){
+        resultHeading.innerHTML= 'There are no search results for ${search}.Try again!'
+}else{
+         mealsElem.innerHTML = data.meals.map(meal => `
+     <div class='meal'>
+         <img src="${meal.strMealThumb}" alt=" ${meal.strMeal}"/>
+         <div class='meal-info' data-mealID='${meal.idMeal}'>
+        <h3>${meal.strMeal}</h3>
+    </div>
+        </div>
+     `)
+     .join(' ');
+   }  
+  });
+  //Clear Search text
+  search.value =' ';
     }else{
-        mealsElem.innerHTML = data.meals.map(meal => ``)
-    }
-    
- })
-    }else{
-   document.getElementById('error').innerHTML= 'Please type a search value'; 
+        document.getElementById('error').style.display='block';
+   document.getElementById('error').innerHTML= 'Please type a search value *'; 
 }
 
 
 });
 
-
-function searchMeals(e){
-
-
-}
 
