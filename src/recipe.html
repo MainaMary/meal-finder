@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="ie=edge">
+        <title>Meal Finder</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+        <link rel="stylesheet" href="../style/style.css">
+    </head>
+    <body>
+  <div class="container">
+   <div class="meal-section">
+      <h1>Delicious Food Recipes</h1>
+      <p class="intro">The Best Tasting Experience.Check out awesome recipes with instructions
+          on how to prepare specific meals.The Best Tasting Experience.Check out awesome recipes with instructions
+          on how to prepare specific meals.
+      </p>
+      
+      <div class="flex">
+          <form class="flex" id="myForm">
+              <input type='text' id="search" placeholder="Search for meals">
+              <button class="search-btn" type="submit" tooltip="search">
+                  <i class="fas fa-search"></i>
+              </button>
+
+          </form>
+         
+          <button class="random-btn" id="random">
+              <i class="fas fa-random"></i>
+          </button>
+      </div>
+      
+        <div id='error'></div>
+        <div id="results-heading"></div>
+        <div id='info'></div>
+        <div id="meals" class="meals"></div>
+        
+        <div id="single-meal"></div>
+
+      
+      
+     </div>
+    
+  </div>
+  <div class="popular">
+    <h2 style="text-align: center; color:orangered;">Most Searched Food Recipes</h2>
+    <div class="images">
+        <div>
+            <img src="../images/recipe2.jpg " class="avatar-img">
+            <h3>Cajun Spiced fish tacos</h3>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>(4 ratings)</span>
+            </div>
+        </div> 
+        <div>
+           <img src="../images/recipe3.jpg " class="avatar-img">
+           <h3>Kentucky Fried Chicken</h3>
+           <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(5 ratings)</span>
+            
+        </div>
+       </div>
+       <div>
+           <img src="../images/recipe4.jpg " class="avatar-img">
+           <h3> Potato Gratin with Chicken</h3>
+           <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <span>(4 ratings)</span>
+        </div>
+       </div>
+  
+    </div>
+
+  </div>
+ 
+  <div class="modal">
+    <div class="modal-content">
+       <div class="span"><span class="close-button">&times;</span></div> 
+       <div class="content">
+        <h2>Welcome to Food Hub Recipes</h2>
+        <p>Enjoy as your check out your favourite  food recipe.</p>
+      </div>
+        
+    </div>
+</div>
+     <script src="../script/slider.js"></script>
+     <script src="../script/app_Recipe.js"></script>
+    </body>
+</html>

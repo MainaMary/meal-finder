@@ -4,31 +4,60 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-compatible" content="ie=edge">
-        <title>Meal Finder</title>
+        <title>Homepage</title>
+        <link rel="stylesheet" href="../style/slider.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-  <div class="container">
-      <h1>Meal Finder</h1>
-      <div class="flex">
-          <form class="flex" id="myForm">
-              <input type='text' id="search" placeholder="Search for meals or keywords">
-              <button class="search-btn" type="submit">
-                  <i class="fas fa-search"></i>
-              </button>
-
-          </form>
-         
-          <button class="random-btn" id="random">
-              <i class="fas fa-random"></i>
-          </button>
-      </div>
-      <div id='error'></div>
-      <div id="results-heading"></div>
-      <div id="meals" class="meals"></div>
-      <div id="single-meal"></div>
-  </div>
-     <script src="app_Recipe.js"></script>
+     <nav>
+         <div class="toggle">
+            <i class="fas fa-bars menu" style="color:#fff;"></i>
+         </div>
+        
+         <div class="main-nav">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>Food Hub  </span> 
+             </div>
+             <ul>
+                 <li><a href="#home">Home</a></li>
+                 <li><a href="index.html">Recipes</a></li>
+                 <li><a href="#contact">Contact</a></li>
+             </ul>
+         </div>
+        
+     </nav>
+     <section id="home">
+         <h1 class="main-title">The Best Tasting Experience</h1>
+         <p class="intro">Are you a food enthusiast struggling to find new recipes? Worry no more.
+             Search for new , tasty and unique Food recipes.
+         </p>
+         <div class="home-page">
+             <div class="btn">
+                 <button type="submit" class="search-button">
+                     View Recipes
+                 </button>
+             </div>
+             <div class="slider">
+             <!-- image slideshow -->
+             <img name='slide' class="slide-show" alt='recpies'>
+             </div>
+         </div>
+     </section>
+     <h1 class="main-title title">Get Our Socials</h1>
+     <section id= contact>
+         <div class='contact'>
+             <i class="fas fa-map-marker-alt icon"></i> <span>Nairobi, Kenya</span> 
+             
+        </div>
+        <div class='contact'>
+           <i class="fas fa-phone icon"></i>  <span>+254 75678961</span>
+       </div>
+       <div class='contact'>
+        <i class="fas fa-envelope icon"></i>   <span>foodhub@gmail.com</span>
+       </div>
+     
+    </section>
+    <script src='../script/slider.js'></script>
     </body>
 </html>
