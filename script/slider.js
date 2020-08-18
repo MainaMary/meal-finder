@@ -36,7 +36,7 @@ openButton.addEventListener('click', showModal);
 
 function showModal(e){
     if(e.target === openButton){
-        window.location.href ='../src/recipe.html';
+        window.location.href ='./src/recipe.html';
     }
 }
 
