@@ -3,11 +3,11 @@ let images = [];
 let time= 3000;
 
 //image list
-images[0] = './images/recipe1.jpg';
-images[1] = './images/recipe2.jpg';
-images[2] = './images/recipe3.jpg';
-images[3] = './images/recipe4.jpg';
-images[4] = './images/recipe5.jpg';
+images[0] = '../images/recipe1.jpg';
+images[1] = '../images/recipe2.jpg';
+images[2] = '../images/recipe3.jpg';
+images[3] = '../images/recipe4.jpg';
+images[4] = '../images/recipe5.jpg';
 
 //change image
 function changeImage(){
