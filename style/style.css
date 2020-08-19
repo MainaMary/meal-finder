@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+
 *{
     box-sizing: border-box;
 }
 body{
     color: #fff;
     background-color:#000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Crimson Text', serif;
+    
     margin: 0;
 }
 .image{
@@ -26,8 +30,9 @@ body{
     text-align: center;
     width: 60%;
     margin: 30px auto;
-    letter-spacing: 0.5px;
-    line-height: 1.5;
+    font-size: 1.3em;
+     letter-spacing: 0.2px;
+    line-height: 1.3em;
 }
 .images{
 
@@ -71,6 +76,8 @@ input[type=text]{
     margin-right: 40px;
     border-radius: 5px;
     outline: none;
+    align-items: center;
+    text-align: center;
 }
 input[type=text]:hover{
     box-shadow: 0 0px 2px 0px rgb(223, 8, 8);
@@ -78,20 +85,20 @@ input[type=text]:hover{
 
 .search-btn{
     border: none;
-    background-color: transparent;
     margin-left: -80px; 
     cursor: pointer;
     outline: none;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 50%; 
     background-color:#000;
     color: #e09850;
-    margin-top: 4px;
+    margin-top: 3px;
 }
 #random{
     margin-left: 20px;
     border: 1px solid #dedede;
+    width: 80px;
     padding: 10px 12px;
     cursor: pointer;
     border-radius: 10px;
@@ -269,11 +276,26 @@ text-align: center;
 }
 @media(max-width: 700px){}
 @media (max-width: 600px){
+    .intro{
+        font-size: 1.2em;
+    }
     input[type='text']{
         width: 300px;
         margin-left: 20px;
     }
-    
+    .flex{
+        flex-direction: column;
+    }
+    input[type=text]{
+        width: 350px;
+    }
+    .search-btn{
+        margin-left: -100px;
+        margin-bottom: 2px;
+    }
+    #random{
+        margin: 20px auto;
+    }
     .images{
         display:grid;
         grid-template-columns: 1fr;

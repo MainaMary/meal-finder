@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -9,6 +11,7 @@
 }
 body{
     background-color: #000;
+    font-family: 'Crimson Text', serif;
 }
 .main-nav{
     display: flex;
@@ -38,7 +41,7 @@ ul li a{
     color: var(--primary-color);
     text-align: center;
     margin: 20px auto;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 .title{
     margin-top: 15px;
@@ -72,7 +75,9 @@ margin: 20px auto;
 text-align: center;
 width: 60%;
 color: #fff;
-font-size: 1.4em;
+letter-spacing: 0.2px;
+line-height: 1.3em;
+font-size: 1.3em;
 }
 .search-button{
     padding: 12px 100px;
@@ -174,6 +179,9 @@ transform-origin:top;
         display: grid;
         grid-template-columns: 1fr;
     }
+    .intro{
+        font-size: 1.2em;
+    }
     .slider{
         text-align: center;
     }
@@ -192,8 +200,14 @@ transform-origin:top;
         flex-direction: column;
         text-align: center;
     }
+    #contact div .icon{
+        line-height: 40px;
+    }
     .icon{
         margin: 20px auto;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
     }
    
    
