@@ -273,6 +273,7 @@ text-align: center;
         width: 300px;
         margin-left: 20px;
     }
+    
     .images{
         display:grid;
         grid-template-columns: 1fr;
