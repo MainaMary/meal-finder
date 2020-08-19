@@ -155,7 +155,7 @@ transform-origin:top;
 }
 
 
-@media (max-width:600px){
+@media only screen and (max-width:400px){
     .toggle{
         display: block;
     }
