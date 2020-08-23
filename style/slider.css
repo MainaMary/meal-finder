@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@423&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 
 *{
@@ -12,7 +12,7 @@
 }
 body{
     
-    font-family: 'Josefin Sans', sans-serif;
+    font-family:'Crimson Text', serif;
     
 }
 
@@ -51,8 +51,9 @@ ul li a{
     font-size: 1.3em;
     margin-bottom: 2px;
     display: block;
-    color: #000;
+    
 }
+
 ul li a:hover{
    
     border-bottom:2px solid #f55617;

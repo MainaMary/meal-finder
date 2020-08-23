@@ -269,6 +269,9 @@ text-align: right;
 .content{
 text-align: center;
 }
+.content h2{
+    color: #f55617;
+}
 .close-button{
     text-align:left;
     font-size:30px;
