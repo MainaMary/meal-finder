@@ -34,7 +34,7 @@ if(search !== '') {
      .then(data =>{
          console.log(data);
          resultHeading.innerHTML= `<h2 class='main-header'>Search results for '${search}':</h2>`
-  //check meals with the serach value
+  //check meals with the search value
 
 if(data.meals === null){
         resultHeading.classList.add('show');
@@ -47,12 +47,12 @@ if(data.meals === null){
          <div class='meal-info' data-mealID='${meal.idMeal}'>
         <h3>${meal.strMeal}</h3>
        </div>
-        </div>
+    </div>
 `)
 
      .join(' '); // return the loop as a string
    }  
-  });
+  })
   //<a href='https://www.youtube.com'>${meal.strYoutube}</div>
   //Clear Search text
   search.value = ' ';
@@ -106,7 +106,7 @@ function addMealToDOM(getMeal){
     single_mealElem.innerHTML =`
  <div class='single-meal-info'>
     <h2>${getMeal.strMeal}</h2>
-    <img src='${getMeal.strMealThumb}' alt="${getMeal.strMeal}" />
+    <img src='${getMeal.strMealThumb}' alt="${getMeal.strMeal} w" />
     <h2>Category</h2>
      ${getMeal.strCategory ? `<p>${getMeal.strCategory}</p>`: ''}
      <h2>Area</h2>
@@ -152,6 +152,7 @@ mealsElem.addEventListener('click', (e)=>{
     });
     if(mealInfo){
         const mealId = mealInfo.getAttribute('data-mealID')
+
         getMealById(mealId)
         console.log(mealId);
     }
@@ -195,3 +196,12 @@ function windowOnClick(event){
         hideModal();
     }
 }
+
+//dark -mode
+const btnDark = document.querySelector('.dark-btn');
+btnDark.addEventListener('click', ()=>{
+
+    let element = document.body;
+    element.classList.toggle('dark-mode');
+    
+})

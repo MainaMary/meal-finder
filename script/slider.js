@@ -42,8 +42,22 @@ function showModal(e){
 
 //toggle button
 const toggle =document.querySelector('.menu');
-
+const ul= document.querySelector('.main-nav');
 toggle.addEventListener('click',()=>{
-    const ul= document.querySelector('.main-nav');
+    
     ul.classList.toggle('active');
+})
+
+//dark -mode
+const btn = document.querySelector('.dark-btn');
+btn.addEventListener('click', (e)=>{
+    if(e.target === btn){
+        let element = document.body;
+        document.querySelector('link').style.color ='#fff';
+        element.classList.toggle('dark-mode');
+    }else{
+        document.querySelector('link').style.color ='#000';
+    }
+   
+    
 })
