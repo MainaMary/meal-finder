@@ -159,7 +159,8 @@ mealsElem.addEventListener('click', (e)=>{
 
 });
 
-
+const image = document.querySelector('.avatar-img');
+image.addEventListener('click', addMealToDOM);
 //Event Listener on the random meal button
 random.addEventListener('click',()=>{
     //fetch random meal from API
